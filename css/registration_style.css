@@ -1,0 +1,105 @@
+body {
+	
+	font-family: 'Roboto', sans-serif;	
+	color: #FBFBFB;
+	background-color: #330000;
+	overflow-x: hidden;
+}
+#header{
+	
+	padding: 20px 0;
+	background-color: #220000;
+}
+#logo{
+	
+	font-size: 50px;
+	text-align: center;
+	letter-spacing: 5px;
+}
+#clock{
+	font-size: 50px;
+	text-align: center;
+}
+@media screen and (max-width: 768px){
+	#clock, #logo, #buttonSpec{
+		
+		font-size: 20px;
+	}
+}
+#navSpec{
+	
+	border-bottom: 2px solid #CC0000;
+}
+#income, #expense, #balance, #settings{
+	
+	border-right: 1px dotted #CC0000;
+}
+#income{
+	
+	border-left: 1px dotted #CC0000;
+}
+@media screen and (max-width: 768px){
+	#income, #expense, #balance, #settings{
+		
+		border-right: none;
+		border-left: none;
+	}
+}
+#mainContent{
+	
+	margin-top: 70px;
+}
+@media screen and (max-width: 768px){
+	#mainContent{
+		
+		margin-top: 150px;
+	}
+}
+#logInBackground{
+	
+	background-color: #BB0000;
+	font-size: 50px;
+}
+@media screen and (max-width: 768px){
+	#logInBackground{
+		
+		font-size: 30px;
+	}
+}
+#name, #email, #password{
+	
+	margin-top: 50px;
+}
+#buttonSpec{
+	
+	width: 150px;
+	margin-top: 50px;
+	border: 1px solid #000000;
+}
+@media screen and (max-width: 768px){
+	#name, #email, #password, #buttonSpec{
+		
+		margin-top: 25px;
+	}
+}
+input[type = text]:focus,
+input[type = email]:focus,
+input[type = password]:focus{
+	
+	background-color: #FFCCCC;
+	border: 2px solid #FF3333;
+}
+#footerCss{
+	
+	font-size: 25px;
+	text-align: center;
+	background-color: #220000;
+	padding: 20px 0;
+	border-top: 1px solid #FFFFFF;
+	position: fixed;
+	bottom: 0px;
+}
+a#logoLink{
+	text-decoration: none;
+	color: white;
+}
