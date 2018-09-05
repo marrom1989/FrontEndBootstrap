@@ -20,6 +20,9 @@
 </head>
 
 <body>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
 		<header>
 		<div class="container-fluid border-bottom" id="header">
 			<div class="row justify-content-around">
@@ -70,7 +73,7 @@
 										</div>
 									</div>
 								<div class="row justify-content-center">
-									<div class="col-6 col-md-4 align-self-center">
+									<div class="col-12 align-self-center">
 										<table id ="incomeTable">
 											<tr><th colspan = "2">Incomes</th></tr>
 											<tr><th>Category</th><th>Value of income</th></tr>
@@ -83,7 +86,7 @@
 									</div>	
 								</div>
 								<div class="row justify-content-center">
-									<div class="col-6 col-md-4 align-self-center">
+									<div class="col-12 align-self-center">
 										<table id ="expenseTable">
 											<tr><th colspan = "2">Expenses</th></tr>
 											<tr><th>Category</th><th>Value of expense</th></tr>
@@ -109,7 +112,7 @@
 									</div>	
 							</div>
 							<div class="row justify-content-center">
-								<div class="col-sm-11 col-lg-4 align-self-center" id="piechart"></div>
+								<div class="col-12 col-lg-4 align-self-center" id="piechart"></div>
 							</div>
 						</div>
 				</article>
@@ -131,6 +134,7 @@
 <script type ="text/javascript" src = "js/balance.js"></script>
 <script type ="text/javascript" src = "js/clock.js"></script>
 <script type ="text/javascript" src = "js/hideAndShowElements.js"></script>
+
 </body>
 
 </html>

@@ -64,13 +64,19 @@ body {
 }
 #incomeTable{
 	
-	margin-top: 50px;
-	font-size: 25px;
+	margin-top: 125px;
+	font-size: 35px;
 }
 #expenseTable{
 	
 	margin-top: 50px;
-	font-size: 25px;
+	font-size: 35px;
+}
+@media screen and (max-width: 1140px){
+	#incomeTable, #expenseTable{
+		
+		font-size: 25px;
+	}
 }
 table{
 	
@@ -88,20 +94,11 @@ th, td, tr{
 }
 #piechart{
 	
-	margin-top: 50px;
-	padding-bottom: 20px;
-}
-@media screen and (max-width: 1140px){
-	#incomeTable, #expenseTable{
-		
-		font-size: 15px;
-	}
-}
-@media screen and (max-width: 1140px){
-	#piechart{
-		
-		left: 0px;
-	}
+	min-width: 310px; 
+	height: 400px; 
+	max-width: 600px; 
+	margin-top: 25px;
+	margin-bottom: 25px;
 }
 #footer{
 	
@@ -110,6 +107,22 @@ th, td, tr{
 	background-color: #220000;
 	padding: 20px 0;
 	border-top: 1px solid #FFFFFF;	
+}
+@media screen and (max-width: 1140px){
+	#footer{
+		
+		font-size: 20px;
+		padding: 5px;
+		bottom: 0px;
+	position: fixed;
+	}
+}
+@media screen and (max-width: 1140px){
+	#footer{
+		
+		font-size: 20px;
+		padding: 5px;
+	}
 }
 a#logoLink{
 	text-decoration: none;

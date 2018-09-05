@@ -48,18 +48,13 @@ body {
 }
 #mainContent{
 	
-	margin-top: 70px;
-}
-@media screen and (max-width: 1140px){
-	#mainContent{
-		
-		margin-top: 130px;
-	}
+	margin-top: 50px;
 }
 #amount, #date, #radioContent{
 	
-	padding: 10px;
-	margin-top: 50px;
+	padding: 5px;
+	margin-top: 10px;
+	
 }
 input[type = text]:focus{
 	
@@ -69,6 +64,7 @@ input[type = text]:focus{
 #button{
 	
 	border: 1px solid #000000;
+	font-size: 15px;
 }
 #footerCss{
 	
@@ -79,6 +75,13 @@ input[type = text]:focus{
 	border-top: 1px solid #FFFFFF;
 	position: fixed;
 	bottom: 0px;
+}
+@media screen and (max-width: 1140px){
+	#footerCss{
+		
+		font-size: 20px;
+		padding: 5px;
+	}
 }
 a#logoLink{
 	text-decoration: none;

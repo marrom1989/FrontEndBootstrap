@@ -27,10 +27,13 @@ body {
 		font-size: 20px;
 	}
 }
+.container{
+	
+	margin-top: 100px;
+}
 #button1{
 
 	font-size: 40px;
-	margin-top: 200px;
 	letter-spacing: 2px;
 	outline: none;
 	padding: 25px;
@@ -39,21 +42,20 @@ body {
 #button2{
 	
 	width: 290px;
-	margin-top: 100px;
+	margin-top: 25px;
 	font-size: 40px;
 	letter-spacing: 2px;
 	outline: none;
 	padding: 25px;
 	border: 1px solid #000000;
 }
-@media screen and (max-width: 544px){
+@media screen and (max-width: 756px){
 	#button1, #button2{
 		
 		font-size: 20px;
 		width: 170px;
 	}
 }
-
 #footer{
 	
 	font-size: 25px;

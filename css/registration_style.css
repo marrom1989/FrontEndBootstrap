@@ -20,8 +20,8 @@ body {
 	font-size: 50px;
 	text-align: center;
 }
-@media screen and (max-width: 768px){
-	#clock, #logo, #buttonSpec{
+@media screen and (max-width: 1140px){
+	#clock, #logo{
 		
 		font-size: 20px;
 	}
@@ -47,14 +47,10 @@ body {
 }
 #mainContent{
 	
-	margin-top: 70px;
+	margin-bottom: 15px;
+	margin-top: 50px;
 }
-@media screen and (max-width: 768px){
-	#mainContent{
-		
-		margin-top: 150px;
-	}
-}
+
 #logInBackground{
 	
 	background-color: #BB0000;
@@ -96,8 +92,21 @@ input[type = password]:focus{
 	background-color: #220000;
 	padding: 20px 0;
 	border-top: 1px solid #FFFFFF;
-	position: fixed;
-	bottom: 0px;
+}
+
+@media screen and (max-width: 1140px){
+	#footerCss{
+		
+		font-size: 20px;
+		padding: 5px;
+	}
+}
+@media screen and (max-width: 768px){
+	#footerCss{
+		
+		bottom: 0px;
+		position: fixed;
+	}
 }
 a#logoLink{
 	text-decoration: none;

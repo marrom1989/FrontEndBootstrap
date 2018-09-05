@@ -20,8 +20,8 @@ body {
 	font-size: 50px;
 	text-align: center;
 }
-@media screen and (max-width: 768px){
-	#clock, #logo, #buttonSpec{
+@media screen and (max-width: 1140px){
+	#clock, #logo{
 		
 		font-size: 20px;
 	}
@@ -45,15 +45,10 @@ body {
 		border-left: none;
 	}
 }
-@media screen and (max-width: 768px){
-	#mainContent{
-		
-		margin-top: 150px;
-	}
-}
 #mainContent{
 	
-	margin-top: 90px;
+	margin-bottom: 15px;
+	margin-top: 50px;
 }
 #logInBackground{
 	
@@ -73,7 +68,7 @@ body {
 #buttonSpec{
 	
 	width: 150px;
-	margin-top: 50px;
+	margin-top: 15px;
 	border: 1px solid #000000;
 }
 input[type = email]:focus,
@@ -89,8 +84,16 @@ input[type = password]:focus{
 	background-color: #220000;
 	padding: 20px 0;
 	border-top: 1px solid #FFFFFF;
-	position: fixed;
 	bottom: 0px;
+	position: fixed;
+}
+
+@media screen and (max-width: 1140px){
+	#footerCss{
+		
+		font-size: 20px;
+		padding: 5px;
+	}
 }
 a#logoLink{
 	text-decoration: none;
