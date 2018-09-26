@@ -73,10 +73,10 @@ input[type = text]:focus{
 }
 #footerCss{
 	
-	font-size: 25px;
+	font-size: 20px;
+	padding: 5px;
 	text-align: center;
 	background-color: #220000;
-	padding: 20px 0;
 	border-top: 1px solid #FFFFFF;
 	position: fixed;
 	bottom: 0px;
@@ -87,8 +87,6 @@ input[type = text]:focus{
 @media screen and (max-width: 988px){
 	#footerCss{
 		
-		font-size: 20px;
-		padding: 5px;
 		position: relative;
 		vertical-align: bottom;
 	}

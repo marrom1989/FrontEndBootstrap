@@ -48,10 +48,10 @@ body {
 }
 #footer{
 	
-	font-size: 25px;
+	font-size: 20px;
+	padding: 5px;
 	text-align: center;
 	background-color: #220000;
-	padding: 20px 0;
 	bottom: 0px;
 	position: fixed;
 	border-top: 1px solid #FFFFFF;	

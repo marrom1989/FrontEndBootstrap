@@ -68,20 +68,13 @@ input[type = text]:focus{
 }
 #footerCss{
 	
-	font-size: 25px;
+	font-size: 20px;
+	padding: 5px;
 	text-align: center;
 	background-color: #220000;
-	padding: 20px 0;
 	border-top: 1px solid #FFFFFF;
 	position: fixed;
 	bottom: 0px;
-}
-@media screen and (max-width: 1140px){
-	#footerCss{
-		
-		font-size: 20px;
-		padding: 5px;
-	}
 }
 a#logoLink{
 	text-decoration: none;
