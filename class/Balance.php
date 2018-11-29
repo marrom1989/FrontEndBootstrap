@@ -57,10 +57,16 @@ class Balance
 		                        expenses_category_assigned_to_user AS ec ON exp.expenses_category_assigned_to_user_id = ec.id 
 								AND exp.user_id = ec.user_id AND ec.user_id = '$id' AND exp.user_id = ec.user_id 
 								AND MONTH(date_of_expense) = '$month' AND YEAR(date_of_expense) = '$year' AND exp.user_id = '$id' GROUP BY(name)";
-
+													
         $expenseCategoryPie = $this->db->query($expensePie);
+		
+		$dataPoints = array();
+	
+	     while($row=$expenseCategoryPie->fetch_assoc()){
+		
+		    $dataPoints [] = array('label'=>$row['name'], 'y'=>$row['SUM(amount)']);	
+	    }
 
-			
         if((!$incomesResult) && (!$expensesResult) && (!$incomeSumResult) && (!$expenseSumResult)) {
 			
             $news = "Błąd";
@@ -121,6 +127,13 @@ class Balance
 							  AND YEAR(date_of_expense) = '$year' AND exp.user_id = '$id' GROUP BY(name)";
        
        $expenseCategoryPie = $this->db->query($expensePie);
+	   
+	   $dataPoints = array();
+	
+	     while($row=$expenseCategoryPie->fetch_assoc()){
+		
+		    $dataPoints [] = array('label'=>$row['name'], 'y'=>$row['SUM(amount)']);	
+	    }
 
 			
         if((!$incomesResult) && (!$expensesResult) && (!$incomeSumResult) && (!$expenseSumResult)) {
@@ -180,6 +193,13 @@ class Balance
 							   AND YEAR(date_of_expense) = '$year' AND exp.user_id = '$id' GROUP BY(name)";
         
         $expenseCategoryPie = $this->db->query($expensePie);
+		
+		$dataPoints = array();
+	
+	     while($row=$expenseCategoryPie->fetch_assoc()){
+		
+		    $dataPoints [] = array('label'=>$row['name'], 'y'=>$row['SUM(amount)']);	
+	    }
         
         			
         if((!$incomesResult) && (!$expensesResult) && (!$incomeSumResult) && (!$expenseSumResult)) {
@@ -241,6 +261,13 @@ class Balance
 							   AND date_of_expense BETWEEN '$start_date' AND '$end_date' AND exp.user_id = '$id' GROUP BY(name)";
         
         $expenseCategoryPie = $this->db->query($expensePie);
+		
+		$dataPoints = array();
+	
+	     while($row=$expenseCategoryPie->fetch_assoc()){
+		
+		    $dataPoints [] = array('label'=>$row['name'], 'y'=>$row['SUM(amount)']);	
+	    }
         
         			
         if((!$incomesResult) && (!$expensesResult) && (!$incomeSumResult) && (!$expenseSumResult)) {

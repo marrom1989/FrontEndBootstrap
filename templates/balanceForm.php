@@ -1,32 +1,33 @@
 <?php if(!$this) die();?>
 
 <head>
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
+<script>
+window.onload = function () {
+ 
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	exportEnabled: true,
+	title:{
+		text: "Wydatki z wybranego okresu."
+	},
+	subtitles: [{
+		text: "Waluta: (PLN)"
+	}],
+	data: [{
+		type: "pie",
+		showInLegend: "true",
+		legendText: "{label}",
+		indexLabelFontSize: 16,
+		indexLabel: "{label} - #percent%",
+		yValueFormatString: "#,##0",
+		dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
+	}]
+});
+chart.render();
+ 
+}
+</script>
 
-      function drawChart() {
-
-        var data = google.visualization.arrayToDataTable([
-           ['name', 'SUM(amount)'],
-		  <?php
-          while($row=$expenseCategoryPie->fetch_assoc()) {
-			  
-			  echo "['".$row['name']."', ".$row['SUM(amount)']."],";
-		  }
-		  ?>
-        ]);
-
-        var options = {
-          title: 'Wydatki z wybranego okresu.'
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-
-        chart.draw(data, options);
-      }
-    </script>
 </head>
 <nav class="navbar navbar-expand-xl navbar-light bg-light" id="navSpec">
 	<a class="navbar-brand" href="#">Menu:</a>
@@ -164,7 +165,9 @@
 	</div>
 	<div class = "row justify-content-around" id="balanceContent">
 		<div class="row justify-content-center">
-			<div class="col-12" id="piechart" style="width: 700px; height: 400px;"></div>
+			<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
 		</div>
 	</div>
 </div>
