@@ -1,78 +1,128 @@
-body {
+body{
 	
-	font-family: 'Roboto', sans-serif;	
-	color: #FBFBFB;
-	background-color: #330000;
+	margin: 0px;
+	padding: 0px;
+	background-image: url(tlo.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	font-family: 'Chakra Petch', sans-serif;
 	overflow-x: hidden;
-}
-#header{
 	
-	padding: 20px 0;
-	background-color: #220000;
 }
 #logo{
 	
-	font-size: 50px;
+	background-color: #111E2B;
+	
+}
+.h1,.h3 {
+	
 	text-align: center;
-	letter-spacing: 5px;
-}
-#clock{
-	font-size: 50px;
-	text-align: center;
-}
-
-@media screen and (max-width: 1140px){
-	#clock, #logo{
-		
-		font-size: 20px;
-	}
-}
-.container{
-	
-	margin-top: 100px;
-}
-#button1{
-
-	font-size: 40px;
-	letter-spacing: 2px;
-	outline: none;
-	padding: 25px;
-	border: 1px solid #000000;
-}
-#button2{
-	
-	width: 290px;
-	margin-top: 25px;
-	font-size: 40px;
-	letter-spacing: 2px;
-	outline: none;
-	padding: 25px;
-	border: 1px solid #000000;
-}
-@media screen and (max-width: 756px){
-	#button1, #button2{
-		
-		font-size: 20px;
-		width: 170px;
-	}
-}
-#footer{
-	
-	font-size: 20px;
+	margin: 0px;
+	color: #E9B64A;
 	padding: 5px;
-	text-align: center;
-	background-color: #220000;
-	bottom: 0px;
-	position: fixed;
-	border-top: 1px solid #FFFFFF;	
-}
-a.link{
-	
-	color: #F9F9F9;	
-	text-decoration: none;
-}
-a#logoLink{
-	text-decoration: none;
-	color: white;
 }
 
+#log{
+	
+	margin: 0px;
+	color: #E9B64A;
+	padding-top: 17px;
+}
+@media screen and (max-width: 1140px){
+	.h1{
+		
+		font-size: 30px;
+	}
+}
+@media screen and (max-width: 1140px){
+	.h3{
+		
+		font-size: 20px;
+	}
+}
+@media screen and (max-width: 1140px){
+	#log{
+		
+		font-size: 15px;
+		padding-top: 10px;
+	}
+}
+@media screen and (max-width: 1140px){
+	p{
+		
+		font-size: 15px;
+	}
+}
+@media screen and (max-width: 523px){
+	#log{
+		
+		padding-top: 5px;
+	}
+}
+p {
+	text-align: center;
+}
+#content{
+	
+	padding: 15px;
+	border: solid 2px #E9B64A;
+	background-color: #FFFFFF;
+	display: block;
+	width: 50%;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 50px;
+	border-radius: 5px;
+	clear: both;
+}
+#balanceContent{
+	
+	padding: 15px;
+	border: solid 2px #E9B64A;
+	background-color: #FFFFFF;
+	display: block;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 50px;
+	border-radius: 5px;
+	clear: both;
+}
+
+.news{
+	
+	font-size: 12px;
+}
+.buttons {
+	
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+
+}
+#incomes, #expenses{
+	
+	min-width: 350px;
+}
+
+th, td {
+	
+	text-align: center;
+}
+@media screen and (max-width: 1140px){
+	th,td{
+		
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 1140px){
+	.btn{
+		
+		font-size: 12px;
+	}
+}
+a#link{
+	
+	color: #E9B64A;
+	text-decoration: none;
+}	
