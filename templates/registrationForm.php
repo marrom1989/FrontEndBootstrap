@@ -21,7 +21,8 @@
 		         </div>
 		         <input type="password" class="form-control" placeholder="Potwierdź hasło" name="repeatedPassword" aria-label="Potwierdz_Haslo" aria-describedby="inputGroup-sizing-sm">
 		    </div>
-		    	<button type="submit" class="btn btn-primary"><i class="icon-plus-outline"></i>Zarejestruj</button>
-		    	<a href="index.php?action=showMain"><button type="button" class="btn btn-secondary"><i class="icon-cancel-outline"></i>Zamknij</button></a>
+		    	<button type="submit" class="btn btn-primary btn-block"><i class="icon-plus-outline"></i>Zarejestruj</button>
+				<div style="padding: 5px"></div>
+		    	<a href="index.php?action=showMain"><button type="button" class="btn btn-secondary btn-block"><i class="icon-cancel-outline"></i>Zamknij</button></a>
 		</form>
 </div>	
