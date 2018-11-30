@@ -38,10 +38,10 @@ class Balance
 									  exp.user_id = ec.user_id AND MONTH(date_of_expense) = '$month' 
 									  AND YEAR(date_of_expense) = '$year' AND exp.user_id = '$id'";
 
-        $incomesSum = "SELECT SUM(amount) FROM incomes WHERE user_id = '1' 
+        $incomesSum = "SELECT SUM(amount) FROM incomes WHERE user_id = '$id' 
 		                          AND MONTH(date_of_income) = '$month' AND YEAR(date_of_income) = '$year'";
 								  
-        $expenseSum = "SELECT SUM(amount) FROM expenses WHERE user_id = '1' 
+        $expenseSum = "SELECT SUM(amount) FROM expenses WHERE user_id = '$id' 
 		                          AND MONTH(date_of_expense) = '$month' AND YEAR(date_of_expense) = '$year'";
 
 
