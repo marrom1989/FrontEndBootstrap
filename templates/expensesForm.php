@@ -1,4 +1,4 @@
-<?php if(!isset($portal)) die();?>
+<?php if(!isset($_SESSION['loged'])) die();?>
 <nav class="navbar navbar-expand-xl navbar-light bg-light" id="navSpec">
 	<a class="navbar-brand" href="#">Menu:</a>
 	<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">

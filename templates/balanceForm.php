@@ -1,4 +1,4 @@
-<?php if(!$this) die();?>
+<?php if(!isset($_SESSION['loged'])) die();?>
 
 <head>
 <script>
